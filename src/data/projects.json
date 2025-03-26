@@ -1,34 +1,18 @@
 [
     {
-        "stack": ["Vue", "TailwindCSS"],
+        "stack": ["Vue", "TailwindCSS", "Laravel", "API"],
         "title": "Aventuro",
         "img": "/projects/aventuro.webp",
         "description": "Aventuro es una aplicación web para agencias de viajes que permite a los usuarios explorar varios paquetes de viajes, realizar reservas y administrar sus cuentas de manera eficiente. Diseñado pensando en la experiencia del usuario, Aventuro ofrece una gama de funcionalidades para garantizar un proceso de reserva fluido y agradable.",
-        "repository": "https://github.com/stivenm0/aventuro_frontend",
+        "repository": "https://github.com/estivenm0/aventuro",
         "link": "https://youtu.be/gSUW1SWNJuk?si=VmcKAuGltvgrbWJW"
-    },
-    {
-        "stack": ["Laravel", "TailwindCSS", "Alpine.js", "MySQL"],
-        "title": "Aventuro API",
-        "img": "/projects/aventuro-api.webp",
-        "description": "Aventuro API permite la comunicación eficiente entre el frontend y el backend, y cuenta con un panel administrativo que proporciona una interfaz amigable para gestionar todos los aspectos de la plataforma.",
-        "repository": "https://github.com/stivenm0/aventuro_backend",
-        "link": "https://youtu.be/gSUW1SWNJuk?si=VmcKAuGltvgrbWJW"
-    },
-    {
-        "stack": ["Laravel", "React", "TailwindCSS", "MySQL"],
-        "title": "Rasus",
-        "img": "/projects/rasus.webp",
-        "description": "Rasus proporciona un conjunto de herramientas para integrar un acortamiento de enlaces en Rasus. La API fue testeada con Postman y es consumida por un Frontend en React, además, está versionada y cuenta con bearer API token.",
-        "repository": "https://github.com/stivenm0/rasus_backend",
-        "link": "https://youtu.be/yB9iMueEPH8"
     },
     {
         "stack": ["Laravel", "Livewire", "Alpine.js", "TailwindCSS", "MySQL"],
         "title": "Comprana",
         "img": "/projects/comprana.webp",
         "description": "Comprana es una aplicación web monolítica que permite comprar víveres desde casa y recibirlos en la puerta. Ofrece una amplia gama de productos, una interfaz intuitiva para buscar y comprar.",
-        "repository": "https://github.com/stivenm0/comprana",
+        "repository": "https://github.com/estivenm0/comprana",
         "link": "https://youtu.be/8wZqrtXeqaA"
     },
     {
@@ -36,7 +20,7 @@
         "title": "Repositi",
         "img": "/projects/repositi.webp",
         "description": "Repositi es una plataforma que recopila y comparte información sobre herramientas web útiles y recursos en línea. Proporciona a los usuarios una fuente confiable de herramientas y recursos que pueden facilitar su trabajo, mejorar su productividad y enriquecer su experiencia en línea.",
-        "repository": "https://github.com/stivenm0/Repositi",
+        "repository": "https://github.com/estivenm0/Repositi",
         "link": "https://youtu.be/JrGrcLe6LL0"
     }
 ]
