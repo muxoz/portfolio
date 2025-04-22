@@ -63,7 +63,7 @@ const stack = [
             </h1>
             
             <p class="mt-2  md:text-xl text-slate-300 ">
-                Mi nombre es Estiven Muñoz, estudiante de Ingeniería de Sistemas y entusiasta del desarrollo backend. Manejo tecnologías como <span class="px-2 text-red-600 bg-white rounded-md">Laravel</span>,
+                Mi nombre es Estiven Muñoz, estudiante de Ingeniería de Sistemas enfocado en el desarrollo backend. Tengo experiencia con tecnologías como <span class="px-2 text-red-600 bg-white rounded-md">Laravel</span>,
                 <span class="px-2 bg-white rounded-md text-violet-700">Inertia</span> y
                 <span class="px-2 bg-white rounded-md text-emerald-500">Vue</span>.
             </p>

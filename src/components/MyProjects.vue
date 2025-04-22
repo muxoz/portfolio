@@ -3,7 +3,7 @@ import projects from "@/data/projects.json";
 </script>
 
 <template>
-    <div id="overlay-example" class="overlay overlay-open:translate-x-0 drawer drawer-start hidden" role="dialog"
+  <div id="overlay-example" class="overlay overlay-open:translate-x-0 drawer drawer-start hidden" role="dialog"
     tabindex="-1">
     <div class="drawer-header">
       <h3 class="drawer-title">PROYECTOS</h3>
@@ -31,15 +31,21 @@ import projects from "@/data/projects.json";
               <div class="px-5 pb-4">
                 <img :src="project.img" alt="">
                 <template v-for="tech, i in project.stack" :key="i">
-                  <span class="badge badge-soft badge-info m-1 " >{{ tech }}</span>
+                  <span class="badge badge-soft badge-info m-1 ">{{ tech }}</span>
                 </template>
                 <p class="text-base-content/80 font-normal">
                   {{ project.description }}
                 </p>
-                <a :href="project.repository" target="_blank" class="btn btn-gradient btn-secondary btn-block">
-                    Repositorio
+                <div class="grid grid-cols-2 gap-1 mt-2">
+                  <a :href="project.repository" target="_blank" title="Repositorio"
+                    class="btn btn-gradient btn-secondary btn-block">
                     <span class="icon-[tabler--brand-github]"></span>
-                </a>
+                  </a>
+                  <a :href="project.link" target="_blank" title="Vídeo"
+                    class="btn btn-gradient btn-error btn-block">
+                    <span class="icon-[tabler--brand-youtube-filled]"></span>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -57,4 +63,3 @@ import projects from "@/data/projects.json";
     </div>
   </div>
 </template>
-
