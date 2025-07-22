@@ -1,13 +1,9 @@
 <script setup>
-import NavBar from "./components/NavBar.vue";
-import AboutMe from "./components/AboutMe.vue";
-import MyProjects from "./components/MyProjects.vue";
-import MyEducation from "./components/MyEducation.vue";
+import NavBar from './components/NavBar.vue';
+import AboutMe from './components/AboutMe.vue';
 </script>
 
 <template>
-  <NavBar/>
-  <AboutMe/>
-  <MyProjects/>
-  <MyEducation/> 
+  <NavBar />
+  <AboutMe />
 </template>

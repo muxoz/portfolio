@@ -1,39 +1,43 @@
 <script setup>
-import {stack} from "@/data/stack.js";
-
+import { stack } from '@/data/stack.js';
+import Badge from './ui/badge/Badge.vue';
+import Button from './ui/button/Button.vue';
+import MyEducation from './MyEducation.vue';
+import MyProjects from './MyProjects.vue';
 </script>
 
 <template>
-    <header class="grid grid-cols-1 md:grid-cols-2 gap-2 md:my-20 space-y-2">
-        <article class="px-10 space-y-3">
-            <h1 class="badge badge-success badge-soft text-sm font-extrabold md:text-xl xl:text-3xl  py-5 ">
-                $Desarrollador Backend
-                <span class="icon-[tabler--brand-laravel] size-10 text-red-600"></span>
-            </h1>
+  <header class="grid grid-cols-1 gap-2 space-y-2 md:my-20 md:grid-cols-2">
+    <article class="space-y-3 px-10">
+      <h1>
+        <Badge class="py-2 text-sm font-extrabold md:text-xl"> $ Desarrollador Backend </Badge>
+      </h1>
 
-            <p class="mt-2  md:text-xl text-slate-300 ">
-                Mi nombre es Estiven Muñoz, estudiante de Ingeniería de Sistemas enfocado en el desarrollo backend.
-                Tengo experiencia con tecnologías como <span
-                    class="px-2 text-red-600 bg-white rounded-md">Laravel</span>,
-                <span class="px-2 bg-white rounded-md text-violet-700">Inertia</span> y
-                <span class="px-2 bg-white rounded-md text-emerald-500">Vue</span>.
-            </p>
+      <p class="mt-2 text-slate-300 md:text-xl">
+        Mi nombre es Estiven Muñoz, estudiante de Ingeniería de Sistemas enfocado en el desarrollo
+        backend. Tengo experiencia con tecnologías como
+        <span class="rounded-md bg-white px-2 text-red-600">Laravel</span>,
+        <span class="rounded-md bg-white px-2 text-violet-700">Inertia</span> y
+        <span class="rounded-md bg-white px-2 text-emerald-500">Vue</span>.
+      </p>
 
-            <div class="drawer-content">
-                <label for="my-drawer" class="btn btn-success btn-soft btn-block drawer-button">Proyectos</label>
-            </div>
+      <MyProjects />
 
-            <button class="btn btn-block btn-soft btn-secondary" onclick="my_modal_1.showModal()">Formación</button>
+      <MyEducation />
 
+      <Button class="w-full" variant="outline" as="a" target="_blank" href="./Estiven_Muñoz_CV.pdf">
+        Ver CV
+      </Button>
+    </article>
 
-            <a href="./Estiven_Muñoz_CV.pdf" target="_blank" class="btn btn-success btn-soft btn-block">Ver CV</a>
-
-
-        </article>
-
-        <article class="flex flex-wrap gap-2 justify-center px-4">
-            <div class="badge badge-neutral badge-soft w-1/5 h-1/3 transform hover:scale-105 hover:rotate-1 "
-                :title="tech.name" v-for="tech, i in stack" :key="i" v-html="tech.span" />
-        </article>
-    </header>
+    <article class="flex flex-wrap justify-center gap-2 px-4">
+      <div
+        class="flex w-1/5 transform justify-center rounded-2xl bg-white/5 p-0 hover:rotate-1 hover:scale-105"
+        :title="tech.name"
+        v-for="(tech, i) in stack"
+        :key="i"
+        v-html="tech.span"
+      ></div>
+    </article>
+  </header>
 </template>

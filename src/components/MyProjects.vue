@@ -1,46 +1,65 @@
-<script setup>
-import { projects } from "@/data/projects.js";
-import Github from "@/icons/socials/Github.vue";
-import Link from "@/icons/socials/Link.vue";
+<script setup lang="ts">
+import { projects } from '@/data/projects.js';
+import Github from '@/icons/socials/Github.vue';
+import Link from '@/icons/socials/Link.vue';
+import { Button } from '@/components/ui/button';
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from '@/components/ui/accordion';
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from '@/components/ui/dialog';
+import Badge from './ui/badge/Badge.vue';
 </script>
 
 <template>
-  <div class="drawer">
-    <input id="my-drawer" type="checkbox" class="drawer-toggle" />
+  <Dialog>
+    <DialogTrigger as-child>
+      <Button variant="outline" class="w-full"> Proyectos </Button>
+    </DialogTrigger>
+    <DialogContent class="max-h-[90dvh] grid-rows-[auto_minmax(0,1fr)_auto] p-0 sm:max-w-[425px]">
+      <DialogHeader class="p-6 pb-0">
+        <DialogTitle>Proyectos</DialogTitle>
+      </DialogHeader>
+      <div class="grid gap-4 overflow-y-auto px-6 py-4">
+        <div class="flex flex-col justify-between">
+          <Accordion type="single" collapsible>
+            <template v-for="(project, i) in projects" :key="i">
+              <AccordionItem :value="project.title">
+                <AccordionTrigger> {{ project.title }}</AccordionTrigger>
+                <AccordionContent>
 
-    <div class="drawer-side">
-      <label for="my-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
-      <ul class="menu bg-base-200 text-base-content min-h-full w-80 md:w-96 p-2">
-        <template v-for="project, i in projects" :key="i">
-          <div class="collapse collapse-plus bg-base-100 border border-base-300">
-            <input type="radio" name="my-accordion-3" />
-            <div class="collapse-title font-semibold">
-              {{ project.title }}
-            </div>
-            <div class="collapse-content text-sm">
-              <img :src="project.img" alt="">
-              <template v-for="tech, i in project.stack" :key="i">
-                <span class="badge badge-soft badge-info m-1 ">{{ tech }}</span>
-              </template>
-              <br>
+                  <img :src="project.img" alt="" />
 
-              {{ project.description }}
+                  <template v-for="(tech, i) in project.stack" :key="i">
+                    <Badge class="my-1"> {{ tech }} </Badge>
+                  </template>
+                  
+                  <br />
 
-              <div class="grid grid-cols-2 gap-1 mt-2">
-                <a :href="project.repository" target="_blank" title="Repositorio"
-                  class="btn btn-soft btn-secondary btn-block">
-                  <Github />
-                </a>
-                <a :href="project.link" target="_blank" title="Vídeo" class="btn btn-soft btn-error btn-block">
-                  <Link />
-                </a>
-              </div>
+                  {{ project.description }}
 
-            </div>
-          </div>
-        </template>
-      </ul>
-    </div>
-  </div>
-
+                  <div class="mt-2 grid grid-cols-2 gap-1">
+                    <Button as="a" :href="project.repository" variant="outline" target="_blank" title="Repositorio">
+                      <Github />
+                    </Button>
+                    <Button as="a" :href="project.link" variant="outline" target="_blank" title="Demo">
+                      <Link />
+                    </Button>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+            </template>
+          </Accordion>
+        </div>
+      </div>
+    </DialogContent>
+  </Dialog>
 </template>
