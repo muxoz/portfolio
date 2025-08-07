@@ -26,4 +26,22 @@ export const projects = [
     repository: 'https://github.com/estivenm0/comprana',
     link: 'https://youtu.be/ZDsoQOYZTCI',
   },
+  {
+    stack: ['Bootstrap', 'Alpine.js'],
+    title: 'Avatarmaker',
+    img: '/projects/avatarmaker.webp',
+    description:
+      'Avatarmaker es una web que permite crear y descargar avatares personalizados mediante la API de DiceBear.',
+    repository: 'https://github.com/estivenm0/avatarmaker',
+    link: 'https://avatarsmaker.netlify.app/',
+  },
+  {
+    stack: ['HTML', 'CSS', 'JavaScript'],
+    title: 'Pokedex',
+    img: '/projects/pokedex.webp',
+    description:
+      'Pokédex es una web con un diseño fiel al estilo original, que permite explorar información de Pokémon de forma visual y organizada.',
+    repository: 'https://github.com/estivenm0/pokedex',
+    link: 'https://s-pokedex.netlify.app/',
+  },
 ];

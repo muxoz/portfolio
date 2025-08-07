@@ -35,22 +35,33 @@ import Badge from './ui/badge/Badge.vue';
               <AccordionItem :value="project.title">
                 <AccordionTrigger> {{ project.title }}</AccordionTrigger>
                 <AccordionContent>
-
                   <img :src="project.img" alt="" />
 
                   <template v-for="(tech, i) in project.stack" :key="i">
                     <Badge class="my-1"> {{ tech }} </Badge>
                   </template>
-                  
+
                   <br />
 
                   {{ project.description }}
 
                   <div class="mt-2 grid grid-cols-2 gap-1">
-                    <Button as="a" :href="project.repository" variant="outline" target="_blank" title="Repositorio">
+                    <Button
+                      as="a"
+                      :href="project.repository"
+                      variant="outline"
+                      target="_blank"
+                      title="Repositorio"
+                    >
                       <Github />
                     </Button>
-                    <Button as="a" :href="project.link" variant="outline" target="_blank" title="Demo">
+                    <Button
+                      as="a"
+                      :href="project.link"
+                      variant="outline"
+                      target="_blank"
+                      title="Demo"
+                    >
                       <Link />
                     </Button>
                   </div>
