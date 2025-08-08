@@ -1,12 +1,12 @@
 export const projects = [
   {
-    stack: ['Laravel', 'Alpine.js', 'Inertia.js'],
-    title: 'Promozioni',
-    img: '/projects/promozioni.webp',
+    stack: ['Laravel', 'Inertia.js'],
+    title: 'Offerty',
+    img: '/projects/offerty.webp',
     description:
-      'Promozioni es una app web que permite a negocios locales publicar sus ubicaciones y promociones. Los usuarios pueden buscar ofertas cercanas en tiendas, restaurantes y comercios, aprovechando descuentos y promociones actualizadas en tiempo real.',
-    repository: 'https://github.com/estivenm0/promozioni',
-    link: 'https://youtu.be/FGabkLGRoGg',
+      'Offerty es una aplicación web moderna que permite a negocios locales publicar promociones y ubicaciones, mientras los usuarios exploran ofertas cercanas en un mapa interactivo. ',
+    repository: 'https://github.com/estivenm0/offerty',
+    link: 'https://github.com/estivenm0/offerty',
   },
   {
     stack: ['Vue', 'TailwindCSS', 'Laravel', 'API'],
