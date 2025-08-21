@@ -23,7 +23,7 @@ import { Button } from '@/components/ui/button';
       <button
         class="btn btn-soft btn-accent animate-pulse rounded-full duration-500 hover:scale-95"
       >
-        estivenm
+        Muxzz
       </button>
 
       <a
@@ -36,7 +36,7 @@ import { Button } from '@/components/ui/button';
       </a>
       <a
         class="btn btn-soft btn-primary btn-circle duration-500 hover:scale-95"
-        href="https://github.com/estivenm0"
+        href="https://github.com/muxzz"
         target="_blank"
         rel="noopener noreferrer"
       >

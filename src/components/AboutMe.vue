@@ -14,9 +14,10 @@ import MyProjects from './MyProjects.vue';
       </h1>
 
       <p class="mt-2 text-slate-300 md:text-xl">
-        Mi nombre es Estiven Muñoz, estudiante de Ingeniería de Sistemas enfocado en el desarrollo
+        Mi nombre es Maycol Muñoz, estudiante de Ingeniería de Sistemas enfocado en el desarrollo
         backend. Tengo experiencia con tecnologías como
         <span class="rounded-md bg-white px-2 text-red-600">Laravel</span>,
+        <span class="rounded-md bg-white px-2 text-pink-600">livewire</span>,
         <span class="rounded-md bg-white px-2 text-violet-700">Inertia</span> y
         <span class="rounded-md bg-white px-2 text-emerald-500">Vue</span>.
       </p>
@@ -25,7 +26,7 @@ import MyProjects from './MyProjects.vue';
 
       <MyEducation />
 
-      <Button class="w-full" variant="outline" as="a" target="_blank" href="./Estiven_Muñoz_CV.pdf">
+      <Button class="w-full" variant="outline" as="a" target="_blank" href="./Maycol_Muñoz_CV.pdf">
         Ver CV
       </Button>
     </article>
