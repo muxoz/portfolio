@@ -26,7 +26,13 @@ import MyProjects from './MyProjects.vue';
 
       <MyEducation />
 
-      <Button class="w-full" variant="outline" as="a" target="_blank" href="./Maycol_Muñoz_CV.pdf">
+      <Button
+        class="w-full"
+        variant="outline"
+        as="a"
+        target="_blank"
+        href="https://docs.google.com/document/d/1jyEKvQjJeqxRvF9SVVmq6lgxzunbmIyyJ2XKnduaXlg/edit?usp=sharing"
+      >
         Ver CV
       </Button>
     </article>

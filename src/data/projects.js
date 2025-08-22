@@ -5,8 +5,8 @@ export const projects = [
     img: '/projects/offerty.webp',
     description:
       'Offerty es una aplicación web moderna que permite a negocios locales publicar promociones y ubicaciones, mientras los usuarios exploran ofertas cercanas en un mapa interactivo. ',
-    repository: 'https://github.com/muxzz/offerty',
-    link: 'https://github.com/muxzz/offerty',
+    repository: 'https://github.com/muxoz/offerty',
+    link: 'https://github.com/muxoz/offerty',
   },
   {
     stack: ['Laravel', 'Livewire', 'Alpine.js', 'TailwindCSS', 'MySQL'],
@@ -14,7 +14,7 @@ export const projects = [
     img: '/projects/comprana.webp',
     description:
       'Comprana es una aplicación web monolítica que permite comprar víveres desde casa y recibirlos en la puerta. Ofrece una amplia gama de productos, una interfaz intuitiva para buscar y comprar.',
-    repository: 'https://github.com/muxzz/comprana',
+    repository: 'https://github.com/muxoz/comprana',
     link: 'https://youtu.be/ZDsoQOYZTCI',
   },
   {
@@ -23,7 +23,7 @@ export const projects = [
     img: '/projects/aventuro.webp',
     description:
       'Aventuro es una aplicación web para agencias de viajes que permite a los usuarios explorar varios paquetes de viajes, realizar reservas y administrar sus cuentas de manera eficiente. Diseñado pensando en la experiencia del usuario, Aventuro ofrece una gama de funcionalidades para garantizar un proceso de reserva fluido y agradable.',
-    repository: 'https://github.com/muxzz/aventuro',
+    repository: 'https://github.com/muxoz/aventuro',
     link: 'https://youtu.be/enFP3gEd3sQ',
   },
   {
@@ -32,7 +32,7 @@ export const projects = [
     img: '/projects/avatarmaker.webp',
     description:
       'Avatarmaker es una web que permite crear y descargar avatares personalizados mediante la API de DiceBear.',
-    repository: 'https://github.com/muxzz/avatarmaker',
+    repository: 'https://github.com/muxoz/avatarmaker',
     link: 'https://avatarsmaker.netlify.app/',
   },
 ];
